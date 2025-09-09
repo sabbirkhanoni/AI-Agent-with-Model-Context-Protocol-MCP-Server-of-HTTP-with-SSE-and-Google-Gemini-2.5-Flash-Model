@@ -34,6 +34,9 @@ graph TD
     Client[Client] -- HTTP/SSE --> Server[MCP HTTP with SSE Server]
     Server -- API Call --> Gemini[Google Gemini 2.5 Flash Model]
 ```
+MCP of HTTP with SSE Server's Workflow
+<img width="1042" height="545" alt="Screenshot 2025-09-06 034711" src="https://github.com/user-attachments/assets/85362647-36ab-47e7-8ac8-7171377b7b4b" />
+
 
 - **Client:** Sends prompts/requests and receives streaming responses via SSE.
 - **MCP SSE Server:** Handles protocol logic, manages context, and communicates with the Gemini model.
